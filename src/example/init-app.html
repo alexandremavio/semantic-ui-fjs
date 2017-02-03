@@ -13,7 +13,7 @@
 	<fjs:ui-button label="global variable primary" tab-index="4" icon="shuffle" on-click="${this.test}" global-variable="primary"></fjs:ui-button>
   <fjs:ui-button animation="vertical" animated="true" visible-content-label="Próximo" label="" color="yellow" hidden-content-icon="right arrow" tab-index="0"></fjs:ui-button>
 
-	<for each="item in new String('peao,teste,ops,peao').split(',')">
+	<for each="item in new String('peao,teste,ops,peao,teste').split(',')">
 		<fjs:ui-button label="${item}" tab-index="1" icon="shuffle" click.delegate="this.test" color="red"></fjs:ui-button>
 	</for>
 </template>
