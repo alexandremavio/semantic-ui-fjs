@@ -1,8 +1,6 @@
 <template>
 	<require from="semantic-ui-fjs as fjs" type="namespace"></require>
-	<for each="item in new String('peao,teste,ops,peao,teste').split(',')">
-		<fjs:ui-button label="${item}" tab-index="1" icon="shuffle" click.delegate="this.test" color="red"></fjs:ui-button>
-	</for>
+
 	<fjs:ui-button tab-index="1"
 								 icon="shuffle"
 								 click.trigger="this.test"
@@ -62,12 +60,22 @@
 								 tab-index="0">
 	</fjs:ui-button>
 
-	<fjs:ui-button animation="fade"								 
+	<fjs:ui-button animation="fade"
 								 hidden-content-label="$12.99 a month"
 								 tab-index="0">
 								 Sign-up for a Pro account
 	</fjs:ui-button>
 
+	<fjs:ui-button labeled="true",
+								 labeled-button-icon="heart",
+								 labeled-button-color="red",
+								 labeled-button-label="Like",
+								 labeled-label="1,048",
+								 labeled-label-color="red",
+								 labeled-label-position="right",
+								 labeled-left="true",
+								 tab-index="0">
+	</fjs:ui-button>
 
 
 

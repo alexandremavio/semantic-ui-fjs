@@ -1,6 +1,6 @@
 <template>
   <div
-    class="${'ui '+ (this.globalVariable||this.color||this.color) + (this.disabled?' disabled':'') + this.animationClass  +' button'}"
+    class="${'ui '+ (this.globalVariable||this.color||this.color) + (this.disabled?' disabled':'') + this.animationClass + this.labeledClass +' labeled button'}"
     tabindex="${this.tabIndex}"
     click.trigger="this.onClick"
     >
@@ -20,6 +20,27 @@
             <i class="${this.hiddenContentIcon+' icon'}"></i>
           </if>
         </div>
-      </if>
+      <elseif condition="this.labeled">
+        <if condition="this.labeledLeft">
+          <a class="${'ui basic '+ this.labeledLabelColor + ' ' + this.labeledLabelPosition +' pointing label'}">
+            ${this.labeledLabel}
+          </a>
+          <div class="${'ui '+ this.labeledButtonColor +' button'}">
+            <if condition="this.labeledButtonIcon">
+              <i class="${this.labeledButtonIcon +' icon'}"></i> ${this.labeledButtonLabel}
+            </if>
+          </div>
+        <else>
+          <div class="${'ui '+ this.labeledButtonColor +' button'}">
+            <if condition="this.labeledButtonIcon">
+              <i class="${this.labeledButtonIcon +' icon'}"></i> ${this.labeledButtonLabel}
+            </if>
+          </div>
+          <a class="${'ui basic '+ this.labeledLabelColor + ' ' + this.labeledLabelPosition +' pointing label'}">
+            ${this.labeledLabel}
+          </a>
+        </if>
+     </if>
   </div>
+
 </template>
