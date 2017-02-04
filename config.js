@@ -8,13 +8,13 @@ System.config({
   },
 
   map: {
-    "semantic-ui-fjs":"dist/ui/index",
     "css": "github:systemjs/plugin-css@0.1.32",
     "eliorcohen/semantic-ui": "github:eliorcohen/semantic-ui@1.11.6",
     "es6-shim": "npm:es6-shim@0.35.1",
     "event-emitter-lite": "npm:event-emitter-lite@1.0.5",
     "ferrugemjs": "npm:ferrugemjs@0.10.6",
     "incremental-dom": "npm:incremental-dom@0.5.1",
+    "semantic-ui-fjs": "dist/ui/index",
     "ts-helpers": "npm:ts-helpers@1.1.1",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
