@@ -1,19 +1,42 @@
 <template>
 	<require from="semantic-ui-fjs as fjs" type="namespace"></require>
-  <label click.trigger="this.test">
-		${this.disableAll}
-	</label>
-	<fjs:ui-label>
-		${this.disableAll}
-	</fjs:ui-label>
-	<fjs:ui-button tab-index="1" icon="shuffle" click.trigger="this.test" color="red"> Botão 01-----------------</fjs:ui-button>
-	<fjs:ui-button disabled="false" label="Botão 02" tab-index="-1" icon="shuffle" on-click="${this.test}" color="red"></fjs:ui-button>
-	<fjs:ui-button disabled="${this.disableAll}" label="${this.disableAll}" tab-index="2" icon="shuffle" on-click="${this.test}" color="red"></fjs:ui-button>
-	<fjs:ui-button label="global variable secondary" tab-index="3" icon="shuffle" on-click="${this.test}" global-variable="secondary"></fjs:ui-button>
-	<fjs:ui-button label="global variable primary" tab-index="4" icon="shuffle" on-click="${this.test}" global-variable="primary"></fjs:ui-button>
-  <fjs:ui-button animation="vertical" animated="true" visible-content-label="Próximo" label="" color="yellow" hidden-content-icon="right arrow" tab-index="0"></fjs:ui-button>
 
-	<for each="item in new String('peao,teste,ops,peao').split(',')">
-		<fjs:ui-button label="${item}" tab-index="1" icon="shuffle" click.delegate="this.test" color="red"></fjs:ui-button>
-	</for>
+	<fjs:ui-button tab-index="1"
+								 icon="shuffle"
+								 click.trigger="this.test"
+								 color="red">
+								 Botão 01
+	</fjs:ui-button>
+	<fjs:ui-button disabled="false"
+								 tab-index="-1"
+								 icon="shuffle"
+								 on-click="${this.test}"
+								 color="red">
+								 Botão 02
+		</fjs:ui-button>
+	<fjs:ui-button disabled="${this.disableAll}"
+								 tab-index="2"
+								 icon="shuffle"
+								 on-click="${this.test}"
+								 color="red">
+								 Botão 3
+	</fjs:ui-button>
+	<fjs:ui-button tab-index="3"
+								 icon="shuffle"
+								 on-click="${this.test}"
+								 global-variable="secondary">
+								 global variable secondary
+	</fjs:ui-button>
+	<fjs:ui-button tab-index="4"
+								 icon="shuffle"
+								 on-click="${this.test}"
+								 global-variable="primary">
+								 global variable primary
+	</fjs:ui-button>
+  <fjs:ui-button animation="horizontal"
+								 color="yellow"
+								 hidden-content-icon="right arrow"
+								 tab-index="0">
+								 Próximo
+	</fjs:ui-button>
 </template>

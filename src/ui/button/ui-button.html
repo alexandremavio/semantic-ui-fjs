@@ -1,17 +1,18 @@
 <template>
   <div
-    class="${'ui '+ (this.globalVariable||this.color||this.color) + (this.disabled?' disabled':'') + ' ' + (this.animated=='h' ? 'animated': this.animated=='v' ? 'vertical animated':this.animated=='f'?'animated fade':'')  +' button'}"
+    class="${'ui '+ (this.globalVariable||this.color||this.color) + (this.disabled?' disabled':'') + this.animationClass  +' button'}"
     tabindex="${this.tabIndex}"
     click.trigger="this.onClick"
     >
       <if condition="this.icon">
         <i class="${this.icon+' icon'}"></i>
       </if>
-      <if condition="this.animated=='h'">
-        <div class="visible content">${this.visibleContentLabel}</div>
+      <if condition="this.animation=='horizontal'">
         <div class="visible content">
           <content></content>
-          ${this.visibleContentLabel}
+          <if condition="this.visibleContentIcon">
+            <i class="${this.this.visibleContentIcon+' icon'}"></i>
+          </if>
         </div>
         <div class="hidden content">
           <i class="${this.hiddenContentIcon+' icon'}"></i>
