@@ -5,16 +5,21 @@
         ,"moduleResolution": "classic"
         ,"outDir": "./dist"
         ,"experimentalDecorators": true
-        ,"noImplicitAny":true		
+        ,"noImplicitAny":true       
         ,"sourceMap": false        
-		,"declaration": false
-		,"removeComments":true
-		,"noEmitHelpers":true 
-		,"suppressImplicitAnyIndexErrors": true
+        ,"declaration": false
+        ,"removeComments":true
+        ,"noEmitHelpers":true 
+        ,"importHelpers":true
+        ,"suppressImplicitAnyIndexErrors": true
+        ,"baseUrl": "./"
+        ,"paths": {
+            "tslib" : ["jspm_packages/npm/tslib@1.5.0/tslib.d.ts"]
+        }
     },
     "exclude": [
         "node_modules"
-		,"dist"
+        ,"dist"
     ],
     "compileOnSave": false
 }
