@@ -7,18 +7,19 @@
       <if condition="this.icon">
         <i class="${this.icon+' icon'}"></i>
       </if>
-      <if condition="this.animation=='horizontal'">
+      <if condition="this.animation">
         <div class="visible content">
           <content></content>
           <if condition="this.visibleContentIcon">
-            <i class="${this.this.visibleContentIcon+' icon'}"></i>
+            <i class="${this.visibleContentIcon+' icon'}"></i>
           </if>
         </div>
         <div class="hidden content">
-          <i class="${this.hiddenContentIcon+' icon'}"></i>
+          ${this.hiddenContentLabel}
+          <if condition="this.hiddenContentIcon">
+            <i class="${this.hiddenContentIcon+' icon'}"></i>
+          </if>
         </div>
-      <else>
-        <content></content>
       </if>
   </div>
 </template>

@@ -5,10 +5,12 @@ export class UiButton{
   private icon:string;
   private globalVariable:string;
   private animationClass:string;
-  private visibleContentLabel:string;
+  private animation:string;
+  private hiddenContentLabel:string;
   private hiddenContentIcon:string;
   private disabled:boolean;
   private click:TriggerEvent;
+  private visibleContentIcon:string;
 
   constructor() {
     this.color="";
@@ -16,9 +18,10 @@ export class UiButton{
     this.icon="";
     this.tabIndex=0;
     this.animation="";
-    this.visibleContentLabel="";
+    this.hiddenContentLabel="";
     this.hiddenContentIcon="";
     this.animationClass="";
+    this.visibleContentIcon="";
     this.click = new TriggerEvent();
   }
   onClick(){

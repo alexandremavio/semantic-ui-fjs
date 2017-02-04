@@ -1,11 +1,8 @@
 <template>
 	<require from="semantic-ui-fjs as fjs" type="namespace"></require>
-
-<<<<<<< HEAD
 	<for each="item in new String('peao,teste,ops,peao,teste').split(',')">
 		<fjs:ui-button label="${item}" tab-index="1" icon="shuffle" click.delegate="this.test" color="red"></fjs:ui-button>
 	</for>
-=======
 	<fjs:ui-button tab-index="1"
 								 icon="shuffle"
 								 click.trigger="this.test"
@@ -42,7 +39,36 @@
 								 color="yellow"
 								 hidden-content-icon="right arrow"
 								 tab-index="0">
-								 Próximo
+								 Próximo 1
 	</fjs:ui-button>
->>>>>>> a93d82b25b374e76be7a093eef5a965e05b11259
+	<fjs:ui-button animation="horizontal"
+								 visible-content-icon="left arrow"
+								 hidden-content-icon="right arrow"
+								 tab-index="0">
+								 Próximo 2
+	</fjs:ui-button>
+
+	<fjs:ui-button animation="horizontal"
+								 visible-content-icon="left arrow"
+								 hidden-content-icon="right arrow"
+								 hidden-content-label="Mavio"
+								 tab-index="0">
+								 Próximo 3
+	</fjs:ui-button>
+
+	<fjs:ui-button animation="vertical"
+								 visible-content-icon="shop"
+								 hidden-content-label="shop"
+								 tab-index="0">
+	</fjs:ui-button>
+
+	<fjs:ui-button animation="fade"								 
+								 hidden-content-label="$12.99 a month"
+								 tab-index="0">
+								 Sign-up for a Pro account
+	</fjs:ui-button>
+
+
+
+
 </template>
