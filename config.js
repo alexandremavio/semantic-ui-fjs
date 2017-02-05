@@ -14,6 +14,7 @@ System.config({
     "event-emitter-lite": "npm:event-emitter-lite@1.0.5",
     "ferrugemjs": "npm:ferrugemjs@0.10.6",
     "incremental-dom": "npm:incremental-dom@0.5.1",
+    "jquery": "npm:jquery@3.1.1",
     "semantic-ui-fjs": "dist/ui/index",
     "ts-helpers": "npm:ts-helpers@1.1.1",
     "tslib": "npm:tslib@1.5.0",

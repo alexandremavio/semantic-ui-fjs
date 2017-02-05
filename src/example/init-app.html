@@ -1,82 +1,11 @@
-<template>
-	<require from="semantic-ui-fjs as fjs" type="namespace"></require>
+<template no-view-model="true">
+	<require from="eliorcohen/semantic-ui/dist/semantic.min.css!"></require>
+	<require from="jquery as jq" type="script"></require>	
+	<require from="eliorcohen/semantic-ui/dist/semantic.min as semantic-lib" type="script"></require>
 
-	<fjs:ui-button tab-index="1"
-								 icon="shuffle"
-								 click.trigger="this.test"
-								 color="red">
-								 Botão 01
-	</fjs:ui-button>
-	<fjs:ui-button disabled="false"
-								 tab-index="-1"
-								 icon="shuffle"
-								 on-click="${this.test}"
-								 color="red">
-								 Botão 02
-		</fjs:ui-button>
-	<fjs:ui-button disabled="${this.disableAll}"
-								 tab-index="2"
-								 icon="shuffle"
-								 on-click="${this.test}"
-								 color="red">
-								 Botão 3
-	</fjs:ui-button>
-	<fjs:ui-button tab-index="3"
-								 icon="shuffle"
-								 on-click="${this.test}"
-								 global-variable="secondary">
-								 global variable secondary
-	</fjs:ui-button>
-	<fjs:ui-button tab-index="4"
-								 icon="shuffle"
-								 on-click="${this.test}"
-								 global-variable="primary">
-								 global variable primary
-	</fjs:ui-button>
-  <fjs:ui-button animation="horizontal"
-								 color="yellow"
-								 hidden-content-icon="right arrow"
-								 tab-index="0">
-								 Próximo 1
-	</fjs:ui-button>
-	<fjs:ui-button animation="horizontal"
-								 visible-content-icon="left arrow"
-								 hidden-content-icon="right arrow"
-								 tab-index="0">
-								 Próximo 2
-	</fjs:ui-button>
-
-	<fjs:ui-button animation="horizontal"
-								 visible-content-icon="left arrow"
-								 hidden-content-icon="right arrow"
-								 hidden-content-label="Mavio"
-								 tab-index="0">
-								 Próximo 3
-	</fjs:ui-button>
-
-	<fjs:ui-button animation="vertical"
-								 visible-content-icon="shop"
-								 hidden-content-label="shop"
-								 tab-index="0">
-	</fjs:ui-button>
-
-	<fjs:ui-button animation="fade"
-								 hidden-content-label="$12.99 a month"
-								 tab-index="0">
-								 Sign-up for a Pro account
-	</fjs:ui-button>
-
-	<fjs:ui-button labeled="true",
-								 labeled-button-icon="heart",
-								 labeled-button-color="red",
-								 labeled-button-label="Like",
-								 labeled-label="1,048",
-								 labeled-label-color="red",
-								 labeled-label-position="right",
-								 labeled-left="true",
-								 tab-index="0">
-	</fjs:ui-button>
-
-
-
+	<require from="./container-exa/container-exa as exemplo-container"></require>
+	<exemplo-container></exemplo-container>
+	<require from="./button-exa/button-exa as exemplo-button"></require>
+	<exemplo-button></exemplo-button>
+	
 </template>
