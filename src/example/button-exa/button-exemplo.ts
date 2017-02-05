@@ -1,13 +1,9 @@
-import "eliorcohen/semantic-ui/dist/semantic.min.css!";
-import "eliorcohen/semantic-ui/dist/semantic.min";
-
-export class InitApp{
+export class ButtonExemplo{
     private title: string;
     private disableAll:boolean;
     private refresh:Function;
     constructor(){
 	   this.title = "FerrugemJS";
-
     }
     private test(){
       alert('opbs');
