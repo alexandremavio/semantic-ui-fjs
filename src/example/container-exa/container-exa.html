@@ -1,4 +1,37 @@
 <template no-view-model="true">
-	<require from="semantic-ui-fjs as fjs" type="namespace"></require>
-	<fjs:ui-container></fjs:ui-container>
+	<require from="semantic-ui-fjs as ui" type="namespace"></require>
+	<ui:container-menu>
+		<a class="item">
+			<i class="home icon"></i> Home
+		</a>
+		<a class="item">
+			<i class="grid layout icon"></i> Browse
+		</a>
+		<a class="item">
+			<i class="mail icon"></i> Messages
+		</a>
+	</ui:container-menu>
+	<ui:container-grid column="twelve">
+		<div class="four wide column">
+			<p>bla bla bla one a</p>
+			<p>bla bla bla one b</p>
+		</div>
+		<div class="four wide column">
+			<p>bla bla bla two a</p>
+			<p>bla bla bla two b</p>
+		</div>
+		<div class="four wide column">
+			<p>bla bla bla thee a</p>
+			<p>bla bla bla thee b</p>
+		</div>
+		<ui:container-column column="one">
+			<p>bla bla bla four a</p>
+			<p>bla bla bla four b</p>
+		</ui:container-column>
+	</ui:container-grid>
+	<ui:container-segment>		
+		<h2 class="ui header">Dogs Roles with Humans</h2>
+		<p>bla bla bla hus whats does fox say?</p>
+		<p>tchu tcha tchu</p>
+	</ui:container-segment>
 </template>
