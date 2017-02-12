@@ -12,7 +12,7 @@ System.config({
     "eliorcohen/semantic-ui": "github:eliorcohen/semantic-ui@1.11.6",
     "es6-shim": "npm:es6-shim@0.35.1",
     "event-emitter-lite": "npm:event-emitter-lite@1.0.5",
-    "ferrugemjs": "npm:ferrugemjs@0.10.8",
+    "ferrugemjs": "npm:ferrugemjs@0.10.12",
     "incremental-dom": "npm:incremental-dom@0.5.1",
     "jquery": "npm:jquery@3.1.1",
     "semantic-ui-fjs": "dist/ui/index",
@@ -227,7 +227,7 @@ System.config({
       "create-hash": "npm:create-hash@1.1.2",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0"
     },
-    "npm:ferrugemjs@0.10.8": {
+    "npm:ferrugemjs@0.10.12": {
       "css": "github:systemjs/plugin-css@0.1.32",
       "incremental-dom": "npm:incremental-dom@0.5.1"
     },
